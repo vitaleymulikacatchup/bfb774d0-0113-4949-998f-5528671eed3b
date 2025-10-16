@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Inter_Tight,
-  Playfair_Display,
-  Roboto,
-  Open_Sans,
-  Lato,
-  Montserrat,
-  Poppins,
-  Raleway,
-  Ubuntu,
-  Nunito
-} from "next/font/google";
+import { Inter_Tight, Playfair_Display, Roboto, Open_Sans, Lato, Montserrat, Poppins, Raleway, Ubuntu, Nunito } from "next/font/google";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -74,31 +63,28 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Pizzeria - Fresh and Delicious",
-  description: "Discover our menu and enjoy the best pizza in town.",
-  keywords: "pizzeria, pizza, italian food, dining, restaurant",
+  title: "Pizzeria - Best Pizza in Town",
+  description: "Enjoy the most authentic pizza experience. Visit us or order online today!",
   openGraph: {
-    title: "Pizzeria - Fresh and Delicious",
-    description: "Discover our menu and enjoy the best pizza in town.",
-    url: "",
+    title: "Pizzeria - Best Pizza in Town",
+    description: "Experience authentic pizza with fresh, quality ingredients. Visit our pizzeria or order now!",
+    url: "https://pizzeria.com",
     siteName: "Pizzeria",
-    images: [{
-      url: "https://images.pexels.com/photos/2909822/pexels-photo-2909822.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      alt: "Delicious pizza"
-    }],
-    type: "website"
+    images: [{ url: "https://images.pexels.com/photos/2909822/pexels-photo-2909822.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Colorful pink crust pizza with vegetables and herbs on a wooden platter. Perfect for food lovers." }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pizzeria - Fresh and Delicious",
-    description: "Discover our menu and enjoy the best pizza in town.",
-    images: ["https://images.pexels.com/photos/2909822/pexels-photo-2909822.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"]
-  }
+    title: "Pizzeria - Best Pizza in Town",
+    description: "Authentic pizza made with love and the freshest ingredients. Order now!",
+    images: ["https://images.pexels.com/photos/2909822/pexels-photo-2909822.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"],
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode; }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body
